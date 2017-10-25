@@ -1,0 +1,258 @@
+/************************************************************
+                 Default Styles
+************************************************************/
+
+/*************************************************
+                   BOX MODEL
+*************************************************/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+/*************************************************
+                    FIX
+*************************************************/
+
+
+body{
+    color: #114B5F;
+    font-family: 'Droid Sans', sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Neucha', cursive;
+    font-weight: 400;
+}
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0px;
+}
+h3 {
+    margin: 0;
+    font-size: 17px;
+}
+
+a {
+    color: #E7F59E;
+}
+
+a:focus {
+    outline-color: #FFF;
+}
+
+li a:focus {
+    color: #FFF;
+}
+
+
+li a:hover {
+    color: #FFF;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: auto;
+}
+
+.header-content-wrap {
+    padding-bottom: 25px;
+}
+
+.col-wide dd{
+    margin-left: 0;
+    margin-top: 1em;
+}
+
+.desc {
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/************************************************************
+                 Header & Footer Styles
+************************************************************/
+
+/* Global Styles */
+header, footer {
+    background: #F45B69;
+    color: #F1F7EE;
+}
+
+/* Header */
+header {
+    padding-top: 25px;
+    position: relative;
+    text-align: justify;
+}
+header h1, header h2 {
+    margin: 0;
+}
+
+.profile-image {
+    border-radius: 50%;
+    border: 4px solid #114B5F;
+    max-width: 100%;
+    height: auto;
+}
+
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 5px;
+    background: #E7F59E;
+    color: #114B5F;
+}
+
+.download:focus {
+    outline-color: #114B5F;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+.contact-info a {
+    margin: 10px;
+    font-size: 40px;
+    display: inline-block;
+}
+
+/************************************************************
+                 Nav Styles
+************************************************************/
+nav {
+    text-align: center;
+    background: #114B5F;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2px;
+    z-index: 150;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/************************************************************
+                 Work Experience Styles
+************************************************************/
+.work {
+    background: linear-gradient(rgba(69,105,144, 0.8), rgba(69,105,144, 0.8)),
+                url(../images/background-2.jpg) no-repeat fixed;
+    border-bottom: 2px solid #114B5F;
+    border-top: 4px solid #114B5F;
+    color: #F1F7EE;
+    position: relative;
+}
+
+.image-credit {
+    background-color: #114B5F;
+    color: #FFF;
+    text-decoration: none;
+    padding: 4px 6px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.2;
+    display: inline-block;
+    border-radius: 3px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.fa-camera {
+    margin: 4px;
+}
+/************************************************************
+                 Education Styles
+************************************************************/
+.education {
+    background: #E4FDE1;
+    border-bottom: 4px solid #114B5F;
+    border-top: 2px solid #114B5F;
+}
+
+/************************************************************
+                 Media Queries
+************************************************************/
+
+@media (min-width: 900px) {
+    .col-narrow {
+        width: 30%;
+        float: left;
+    }
+
+    .col-wide {
+        width: 70%;
+        float: left;
+        padding-left: 20px;
+    }
+
+    .col-wide dd{
+        margin-left: 40px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 899px) {
+    header {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .download {
+        position: static;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .header-content-wrap {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .header-content-wrap {
+        padding-top: 100px;
+    }
+}
